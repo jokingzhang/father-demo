@@ -2,14 +2,50 @@
   "name": "father-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+      "dist",
+      "lib",
+      "es"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jokingzhang/father-demo"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "start": "father doc dev",
+    "doc:build": "father doc build",
+    "doc:deploy": "father doc deploy",
+    "build": "father build && node ./scripts/moveDeclare.js && node ./scripts/changeLess2Css.js"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "antd": ">=3.21.0"
+  },
+  "devDependencies": {
+      "babel-plugin-import": "^1.13.0",
+      "father": "^2.29.2",
+      "fs-extra": "^8.1.0",
+      "klaw-sync": "^6.0.0"
+  },
   "dependencies": {
-    "father": "^2.29.2"
-  }
+      "antd": "^3.21.0",
+      "classnames": "^2.2.6",
+      "lodash": "^4.17.15"
+  },
+  "keywords": [
+    "ant-design",
+    "component",
+    "react",
+    "react-component"
+  ],
+  "author": "",
+  "license": "ISC"
 }
