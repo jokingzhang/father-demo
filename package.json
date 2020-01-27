@@ -6,9 +6,9 @@
   "module": "es/index.js",
   "typings": "lib/index.d.ts",
   "files": [
-      "dist",
-      "lib",
-      "es"
+    "dist",
+    "lib",
+    "es"
   ],
   "repository": {
     "type": "git",
@@ -30,15 +30,15 @@
     "antd": ">=3.21.0"
   },
   "devDependencies": {
-      "babel-plugin-import": "^1.13.0",
-      "father": "^2.29.2",
-      "fs-extra": "^8.1.0",
-      "klaw-sync": "^6.0.0"
+    "babel-plugin-import": "^1.13.0",
+    "father": "^2.29.2",
+    "fs-extra": "^8.1.0",
+    "klaw-sync": "^6.0.0"
   },
   "dependencies": {
-      "antd": "^3.21.0",
-      "classnames": "^2.2.6",
-      "lodash": "^4.17.15"
+    "antd": "^3.21.0",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15"
   },
   "keywords": [
     "ant-design",
